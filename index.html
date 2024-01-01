@@ -6,6 +6,135 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>List, Table & Form</h1>
+        <nav>
+            <a href="#list">List</a> <br>
+            <a href="#table">Table</a> <br>
+            <a href="#form">Form</a> <br>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div id="list">
+            <h2>List</h2>
+            <section>
+                <h3>Language</h3>
+                <ol type="I">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ol>
+            </section>
+            <section>
+                <h3>Domain</h3>
+                <ul>
+                    <li>Data Science</li>
+                    <ul>
+                        <li>ML</li>
+                        <li>AI</li>
+                    </ul>
+                    <li>Web Development</li>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>React</li>
+                    </ul>
+                </ul>
+            </section>
+        </div>
+        <hr>
+        <div id="table">
+            <h2>Table</h2>
+            <section>
+                <table border="1">
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Language</th>
+                    </tr>
+                    <tr>
+                        <td>Aman</td>
+                        <td>XII</td>
+                        <td>Hindi</td>
+                    </tr>
+                    <tr>
+                        <td>Ninja</td>
+                        <td>X</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>Kartik</td>
+                        <td>XI</td>
+                        <td>Japanese</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Kartik is Aman's Brother</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <hr>
+        <div id="form">
+            <H2>Application Form</H2>
+            <section>
+                <form action="submit.js" method="post">
+                    <label for="user_name">Name</label>
+                    <input type="text" id="user_name" placeholder="Enter Name" required> <br>
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="Enter E-mail" required> <br>
+                    <label for="phone">Contact</label>
+                    <input type="text" id="phone" placeholder="Enter Contact"> <br>
+                    <label for="user_pass">Password</label>
+                    <input type="password" id="user_pass" placeholder="Enter Password"> <br>
+        
+                    Select Gender: 
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" >
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" value="other"> <br>
+                    
+                    Select Language: 
+                    <label for="cpp">C++</label>
+                    <input type="checkbox" name="lang" id="cpp" value="cpp" >
+                    <label for="python">Python</label>
+                    <input type="checkbox" name="lang" id="python" value="python" >
+                    <label for="js">Javascript</label>
+                    <input type="checkbox" name="lang" id="js" value="js" > <br>
+
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date" > <br>
+                    <label for="color">Select Colour</label>
+                    <input type="color" id="color" > <br>
+                    <label for="filter">Select Range</label>
+                    <input type="range" id="filter" > <br>
+                    <label for="file">Upload File</label>
+                    <input type="file" id="file" > <br>
+
+                    <label for="submit">Submit</label>
+                    <input type="submit" value="Submit" id="submit">
+
+                </form>
+            </section>
+        </div>
+        <hr>
+        <div id="contact">
+            <h2>Contact</h2>
+            <footer>
+                <section>
+                    <a href="">Linkedin</a> <br>
+                    <a href="">YouTube</a> <br>
+                    <a href="">GMail</a> <br>
+                    <a href="">GitHub</a>
+                </section>
+            </footer>
+        </div>
+    </main>
     
 </body>
 </html>
